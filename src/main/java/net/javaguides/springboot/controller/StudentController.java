@@ -32,7 +32,7 @@ public class StudentController {
 		// create model attribute to bind form data
 		Student employee = new Student();
 		model.addAttribute("employee", employee);
-		return "new_employee";
+		return "new_Student";
 	}
 	
 	@PostMapping("/saveEmployee")
@@ -50,7 +50,7 @@ public class StudentController {
 		
 		// set employee as a model attribute to pre-populate the form
 		model.addAttribute("employee", employee);
-		return "update_employee";
+		return "update_Student";
 	}
 	
 	@GetMapping("/deleteEmployee/{id}")
