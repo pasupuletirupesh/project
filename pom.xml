@@ -121,9 +121,15 @@
 			<plugin>
                               <groupId>org.jacoco</groupId>
                               <artifactId>jacoco-maven-plugin</artifactId>
-                              <version>0.8.9-SNAPSHOT</version>
+			      <reportSets>
+                                 <reportSet>
+                                   <reports>
+                                       <!-- select non-aggregate reports -->
+                                       <report>report</report>
+                                   </reports>
+                                 </reportSet>
+                              </reportSets>
                         </plugin>
 		</plugins>
 	</build>
-
 </project>
